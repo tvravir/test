@@ -10,6 +10,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { ViewComponent } from './components/view/view.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,10 +20,12 @@ import { HomeComponent } from './components/home/home.component';
     LandingComponent,
     ViewComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    // BrowserModule,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule
   ],
